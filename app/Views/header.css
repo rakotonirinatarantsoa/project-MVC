@@ -1,0 +1,19 @@
+.left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.logo-image {
+    height: 64px;
+}
+.header {
+    background-image: linear-gradient(to bottom, #0077b6 10%, white 100%);;
+    font-size: 24px;
+    color: white;
+    height: 96px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 200;
+}
