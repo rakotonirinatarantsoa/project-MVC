@@ -25,4 +25,14 @@ COLLATE='utf8mb4_general_ci'
 ENGINE=InnoDB
 ; -->
 
+ <!-- CREATE TABLE `user_tickeko` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`nom` VARCHAR(100) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`email` VARCHAR(100) NOT NULL COLLATE 'utf8mb4_general_ci',
+	`password` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_general_ci',
+	PRIMARY KEY (`id`) USING BTREE
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+; -->
 
