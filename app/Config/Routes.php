@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::accueil');
 // Chemin vers connexion
 $routes->get('/login', 'Home::login');
+$routes->get('/backoffice', 'Home::backOffice');
 // Chemin vers inscription
 $routes->get('/inscription', 'Home::inscription');
 $routes->get('crud', 'Home::crudFanampiny');
