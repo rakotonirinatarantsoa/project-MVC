@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="<?= base_url('assets/img/favicon.png')?>" rel="icon">
-  <link href="<?= base_url('assets/img/apple-touch-icon.png')?>" rel="apple-touch-icon">
+  <link href="<?= base_url('assets/img/favicon.png') ?>" rel="icon">
+  <link href="<?= base_url('assets/img/apple-touch-icon.png') ?>" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,36 +28,68 @@
 
 
   <!-- Template Main CSS File -->
-  <link href="<?=base_url('assets/css/main.css')?>" rel="stylesheet">
+  <link href="<?= base_url('assets/css/main.css') ?>" rel="stylesheet">
 
 </head>
 
 <body>
+  <!-- <form action="<?= site_url('create-billet') ?>" method="post">
+    <label>Prix:</label><br>
+    <input type="text" name="prix" required><br><br>
+
+    <label>Description:</label><br>
+    <input type="text" name="description" required><br><br>
+
+    <label>Date (nom):</label><br>
+    <input type="date" name="date" required><br><br>
+
+    <label>Lieu:</label><br>
+    <input type="text" name="lieu" required><br><br>
+
+    <label>Catégorie:</label><br>
+    <input type="text" name="categories" required><br><br>
+
+    <label>Image:</label>
+    <input type="file" name="image" accept="image/png, image/jpeg" />
+
+    <button type="submit">Enregistrer</button>
+  </form> -->
 
   <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    <form action="<?= site_url('create-billet') ?>" method="post">
-        <label>Prix:</label><br>
-        <input type="text" name="prix" required><br><br>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Tickeko<span>.</span></h1>
+      </a>
 
-        <label>Description:</label><br>
-        <input type="text" name="description" required><br><br>
+      <div class="recherche">
+        <input type="text" placeholder="Rechercher" class="barre-recherche">
+        <button class="search-btn">
+          <img src="assets/img/search.svg" alt="search" class="search-icon">
+        </button>
+      </div>
 
-        <label>Date (nom):</label><br>
-        <input type="date" name="date" required><br><br>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#events">Accueil</a></li>
+          <li><a href="#why-us">About</a></li>
+          <li><a href="#">Evènements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
 
-        <label>Lieu:</label><br>
-        <input type="text" name="lieu" required><br><br>
-
-        <label>Catégorie:</label><br>
-        <input type="text" name="categories" required><br><br>
-
-        <label>Image:</label>
-        <input type="file" name="image" accept="image/png, image/jpeg" />
-
-        <button type="submit">Enregistrer</button>
-    </form>
-
+      <div class="left-section">
+        <a class="btn-book-a-table" href="#book-a-table">Se Connecter</a>
+        <a class="btn-book-a-table" href="#book-a-table">S'inscrire</a>
+      </div>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+  <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <!-- <section id="hero" class="hero d-flex align-items-center section-bg">
@@ -71,7 +103,7 @@
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="<?= base_url('assets/img/hero-img.png')?>" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+          <img src="<?= base_url('assets/img/hero-img.png') ?>" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
         </div>
       </div>
     </div>
@@ -79,10 +111,10 @@
 
   <main id="main">
 
-    
+
 
     <!-- ======= Why Us Section ======= -->
-    
+
     <!-- ======= Events Section ======= -->
     <section id="events" class="events">
       <div class="container-fluid" data-aos="fade-up">
@@ -178,7 +210,7 @@
 
       </div>
     </section><!-- End Why Us Section -->
-  
+
 
     <!-- ======= Book A Table Section ======= -->
     <section id="book-a-table" class="book-a-table">
@@ -239,7 +271,7 @@
       </div>
     </section><!-- End Book A Table Section -->
 
-    
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -400,15 +432,15 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
-  <script src="<?= base_url('assets/vendor/aos/aos.js')?>"></script>
-  <script src="<?= base_url('assets/vendor/glightbox/js/glightbox.min.js')?>"></script>
-  <script src="<?= base_url('assets/vendor/purecounter/purecounter_vanilla.js')?>"></script>
-  <script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js')?>"></script>
-  <script src="<?= base_url('assets/vendor/php-email-form/validate.js')?>"></script>
+  <script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
+  <script src="<?= base_url('assets/vendor/aos/aos.js') ?>"></script>
+  <script src="<?= base_url('assets/vendor/glightbox/js/glightbox.min.js') ?>"></script>
+  <script src="<?= base_url('assets/vendor/purecounter/purecounter_vanilla.js') ?>"></script>
+  <script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
+  <script src="<?= base_url('assets/vendor/php-email-form/validate.js') ?>"></script>
 
   <!-- Template Main JS File -->
-  <script src="<?= base_url('assets/js/main.js')?>"></script>
+  <script src="<?= base_url('assets/js/main.js') ?>"></script>
 
 </body>
 
