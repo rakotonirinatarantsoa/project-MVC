@@ -30,5 +30,10 @@ class EvenementController extends BaseController
         //     return view('accueil');
         // }
     }
+
+    public function afficherListeEvenement()
+    {
+        $evenementModel = new \App\Models\EvenementModel();
+        $listeEvenements = $evenementModel->findAll();
+    }
 }
-?>
