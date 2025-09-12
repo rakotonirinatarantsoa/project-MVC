@@ -32,7 +32,7 @@
 
 </head>
 
-<body>
+<!-- <body>
   <form action="<?= site_url('create-evenement') ?>" method="post">
     <label>Titre:</label><br>
     <input type="text" name="titre" required><br><br>
@@ -53,10 +53,10 @@
     <input type="file" name="image" accept="image/png, image/jpeg" />
 
     <button type="submit">Enregistrer</button>
-  </form>
+  </form> -->
 
   <!-- ======= Header ======= -->
-  <!-- <header id="header" class="header fixed-top d-flex align-items-center">
+  <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
@@ -87,7 +87,7 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
-  </header> -->
+  </header>
 
 
   <!-- ======= Hero Section ======= -->
@@ -119,7 +119,7 @@
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Events</h2>
+          <!-- <h2>Events</h2> -->
           <p>Tous <span>Vos Evènements</span></p>
         </div>
 

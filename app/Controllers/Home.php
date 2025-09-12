@@ -30,5 +30,10 @@ class Home extends BaseController
         return view('evenements');
     }
 
+    public function backOffice(): string
+    {
+        return view('backoffice');
+    }
+
 
 }
