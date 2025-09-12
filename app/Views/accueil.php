@@ -33,9 +33,9 @@
 </head>
 
 <body>
-  <!-- <form action="<?= site_url('create-billet') ?>" method="post">
-    <label>Prix:</label><br>
-    <input type="text" name="prix" required><br><br>
+  <form action="<?= site_url('create-evenement') ?>" method="post">
+    <label>Titre:</label><br>
+    <input type="text" name="titre" required><br><br>
 
     <label>Description:</label><br>
     <input type="text" name="description" required><br><br>
@@ -47,21 +47,20 @@
     <input type="text" name="lieu" required><br><br>
 
     <label>Catégorie:</label><br>
-    <input type="text" name="categories" required><br><br>
+    <input type="text" name="categorie" required><br><br>
 
     <label>Image:</label>
     <input type="file" name="image" accept="image/png, image/jpeg" />
 
     <button type="submit">Enregistrer</button>
-  </form> -->
+  </form>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
+  <!-- <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+      
         <h1>Tickeko<span>.</span></h1>
       </a>
 
@@ -79,7 +78,7 @@
           <li><a href="#">Evènements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
 
       <div class="left-section">
         <a class="btn-book-a-table" href="#book-a-table">Se Connecter</a>
@@ -88,8 +87,8 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
-  </header>
-  <!-- End Header -->
+  </header> -->
+
 
   <!-- ======= Hero Section ======= -->
   <!-- <section id="hero" class="hero d-flex align-items-center section-bg">

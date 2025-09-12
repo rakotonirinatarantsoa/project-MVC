@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class BilletModel extends Model
+class EvenementModel extends Model
 {
-    protected $table            = 'billets';
+    protected $table            = 'evenements';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
 
@@ -14,11 +14,11 @@ class BilletModel extends Model
     protected $useSoftDeletes   = false;
 
     protected $allowedFields    = [
-        'prix',
+        'titre',
         'description',
         'date',
         'lieu',
-        'categories',
+        'categorie',
         'image'
     ];
 
@@ -28,7 +28,7 @@ class BilletModel extends Model
      * @param array $data
      * @return int|false  Inserted ID on success, false on failure
      */
-    public function addBillet(array $data)
+    public function ajouterEvenement(array $data)
     {
         if ($this->insert($data)) {
             return $this->getInsertID();

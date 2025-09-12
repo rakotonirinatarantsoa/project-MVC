@@ -13,4 +13,4 @@ $routes->get('/inscription', 'Home::inscription');
 $routes->get('crud', 'Home::crudFanampiny');
 $routes->get('evenements', 'Home::eveneme');
 $routes->post('crud', 'Home::evenements');
-$routes->post('create-billet', 'BilletController::createBillet');
+$routes->post('create-evenement', 'EvenementController::createEvenement');

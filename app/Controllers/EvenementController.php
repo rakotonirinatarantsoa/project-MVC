@@ -2,29 +2,27 @@
 
 namespace App\Controllers;
 
-use App\Models\EventsModel;
-
-class BilletController extends BaseController
+class EvenementController extends BaseController
 {
-    public function createBillet()
+    public function createEvenement()
     {
-        $billetModel = new \App\Models\BilletModel();
+        $evenementModel = new \App\Models\EvenementModel();
 
         $data = [
-            'prix'        => $this->request->getPost('prix'),
+            'titre'        => $this->request->getPost('titre'),
             'description' => $this->request->getPost('description'),
             'date'        => $this->request->getPost('date'),
             'lieu'        => $this->request->getPost('lieu'),
-            'categories'  => $this->request->getPost('categories'),
+            'categorie'  => $this->request->getPost('categorie'),
             'image'       => $this->request->getPost('image')
         ];
         // var_dump($data);
 
-        $insertId = $billetModel->addBillet($data);
+        $insertId = $evenementModel->ajouterEvenement($data);
 
         // if ($insertId) {
         //     // Get the newly inserted row
-        //     $newBillet = $billetModel->find($insertId);
+        //     $newBillet = $evenementModel->find($insertId);
 
         //     // Send data to view
         //     return view('accueil', ['billet' => $newBillet]);
