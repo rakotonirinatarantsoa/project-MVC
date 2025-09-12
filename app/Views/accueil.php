@@ -35,40 +35,29 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Tickeko<span>.</span></h1>
-      </a>
+    <form action="<?= site_url('create-billet') ?>" method="post">
+        <label>Prix:</label><br>
+        <input type="text" name="prix" required><br><br>
 
-      <div class="recherche">
-        <input type="text" placeholder="Rechercher" class="barre-recherche">
-        <button class="search-btn">
-          <img src="assets/img/search.svg" alt="search" class="search-icon">
-        </button>
-      </div>
+        <label>Description:</label><br>
+        <input type="text" name="description" required><br><br>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="#events">Accueil</a></li>
-          <li><a href="#why-us">About</a></li>          
-          <li><a href="#">Evènements</a></li>                              
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav><!-- .navbar -->
+        <label>Date (nom):</label><br>
+        <input type="date" name="date" required><br><br>
 
-      <div class="left-section">
-        <a class="btn-book-a-table" href="#book-a-table">Se Connecter</a>
-        <a class="btn-book-a-table" href="#book-a-table">S'inscrire</a>
-      </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <label>Lieu:</label><br>
+        <input type="text" name="lieu" required><br><br>
 
-    </div>
-  </header><!-- End Header -->
+        <label>Catégorie:</label><br>
+        <input type="text" name="categories" required><br><br>
+
+        <label>Image:</label>
+        <input type="file" name="image" accept="image/png, image/jpeg" />
+
+        <button type="submit">Enregistrer</button>
+    </form>
+
 
   <!-- ======= Hero Section ======= -->
   <!-- <section id="hero" class="hero d-flex align-items-center section-bg">

@@ -58,3 +58,158 @@ in APPPATH\Views\evenements.php on line 24.
 10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:22:17 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: GET, Route: create-billet]
+in APPPATH\Controllers\BilletController.php on line 2.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\project-MVC\\app\\Controllers\\BilletController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BilletController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BilletController')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\BilletController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:24:16 --> Error: Class "App\Models\BilletModel" not found
+[Method: GET, Route: create-billet]
+in APPPATH\Controllers\BilletController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:24:45 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
+[Method: GET, Route: create-billet]
+in APPPATH\Models\BilletModel.php on line 40.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-12 07:26:37 --> ParseError: syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+[Method: GET, Route: create-billet]
+in APPPATH\Views\accueil.php on line 45.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('accueil', [], true)
+ 3 APPPATH\Controllers\BilletController.php(29): view('accueil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:26:50 --> ErrorException: Undefined variable $data
+[Method: GET, Route: create-billet]
+in APPPATH\Views\accueil.php on line 45.
+ 1 APPPATH\Views\accueil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\project-MVC\\app\\Views\\accueil.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('accueil', [], true)
+ 5 APPPATH\Controllers\BilletController.php(29): view('accueil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:29:40 --> ErrorException: Undefined variable $newBillet
+[Method: GET, Route: create-billet]
+in APPPATH\Views\accueil.php on line 45.
+ 1 APPPATH\Views\accueil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newBillet', 'C:\\laragon\\www\\project-MVC\\app\\Views\\accueil.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('accueil', [], true)
+ 5 APPPATH\Controllers\BilletController.php(28): view('accueil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:29:58 --> ErrorException: Undefined variable $newBillet
+[Method: GET, Route: create-billet]
+in APPPATH\Views\accueil.php on line 45.
+ 1 APPPATH\Views\accueil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newBillet', 'C:\\laragon\\www\\project-MVC\\app\\Views\\accueil.php', 45)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('accueil', [], true)
+ 5 APPPATH\Controllers\BilletController.php(28): view('accueil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+ERROR - 2025-09-12 07:50:59 --> mysqli_sql_exception: Unknown column 'date' in 'field list' in C:\laragon\www\project-MVC\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\laragon\www\project-MVC\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bi...', 0)
+#1 C:\laragon\www\project-MVC\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bi...')
+#2 C:\laragon\www\project-MVC\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bi...')
+#3 C:\laragon\www\project-MVC\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bi...', Array, false)
+#4 C:\laragon\www\project-MVC\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\project-MVC\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\project-MVC\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\project-MVC\app\Models\BilletModel.php(32): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\project-MVC\app\Controllers\BilletController.php(22): App\Models\BilletModel->addBillet(Array)
+#9 C:\laragon\www\project-MVC\system\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+#10 C:\laragon\www\project-MVC\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+#11 C:\laragon\www\project-MVC\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\project-MVC\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\project-MVC\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\project-MVC\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\laragon\www\project-MVC\system\rewrite.php(44): require_once('C:\\laragon\\www\\...')
+#16 {main}
+CRITICAL - 2025-09-12 07:50:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'date' in 'field list'
+[Method: POST, Route: create-billet]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (:prix:, :description:, :date:, :lieu:, :categories:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\BilletModel.php(32): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\BilletController.php(22): App\Models\BilletModel->addBillet([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:50:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (\'5000\', \'Rico\', \'2025-09-26\', \'Amparaky\', \'Gala\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (\'5000\', \'Rico\', \'2025-09-26\', \'Amparaky\', \'Gala\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (:prix:, :description:, :date:, :lieu:, :categories:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\BilletModel.php(32): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\BilletController.php(22): App\Models\BilletModel->addBillet([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-12 07:50:59 --> [Caused by] mysqli_sql_exception: Unknown column 'date' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (\'5000\', \'Rico\', \'2025-09-26\', \'Amparaky\', \'Gala\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (\'5000\', \'Rico\', \'2025-09-26\', \'Amparaky\', \'Gala\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (\'5000\', \'Rico\', \'2025-09-26\', \'Amparaky\', \'Gala\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `billets` (`prix`, `description`, `date`, `lieu`, `categories`) VALUES (:prix:, :description:, :date:, :lieu:, :categories:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\BilletModel.php(32): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\BilletController.php(22): App\Models\BilletModel->addBillet([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\BilletController->createBillet()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BilletController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
