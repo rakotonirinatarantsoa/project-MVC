@@ -1,1 +1,2 @@
-test back office
+<?php
+var_dump($listeEvenements);

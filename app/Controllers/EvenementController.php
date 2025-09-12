@@ -9,11 +9,11 @@ class EvenementController extends BaseController
         $evenementModel = new \App\Models\EvenementModel();
 
         $data = [
-            'titre'        => $this->request->getPost('titre'),
+            'titre'       => $this->request->getPost('titre'),
             'description' => $this->request->getPost('description'),
             'date'        => $this->request->getPost('date'),
             'lieu'        => $this->request->getPost('lieu'),
-            'categorie'  => $this->request->getPost('categorie'),
+            'categorie'   => $this->request->getPost('categorie'),
             'image'       => $this->request->getPost('image')
         ];
         // var_dump($data);
@@ -35,5 +35,6 @@ class EvenementController extends BaseController
     {
         $evenementModel = new \App\Models\EvenementModel();
         $listeEvenements = $evenementModel->findAll();
+        return view('backoffice', ['listeEvenements' => $listeEvenements]);
     }
 }
