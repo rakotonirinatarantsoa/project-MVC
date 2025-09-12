@@ -20,7 +20,7 @@
 /* Colors */
 :root {
   --color-default: #212529;
-  --color-primary:  #149ddd;
+  --color-primary:  #00AFA3;
   --color-secondary: #37373f;
 }
 
@@ -93,6 +93,27 @@ section {
 
 .section-header p span {
   color: var(--color-primary);
+}
+
+.barre-recherche {
+  padding: 4px 8px;
+  border-radius: 32px;
+  border: solid 1px rgb(201, 201, 201);
+}
+
+.barre-recherche::placeholder {
+  font-size: 14px;
+}
+
+.search-btn {
+  border: none;
+  background-color: #DBEAFE;
+  padding: 4px 12px;
+  border-radius: 32px;
+}
+
+.search-icon {
+  height: 24px;
 }
 
 /*--------------------------------------------------------------
@@ -247,7 +268,7 @@ section {
 .header {
   background: #fff;
   transition: all 0.5s;
-  z-index: 997;
+  z-index: 1000;
   height: 90px;
   border-bottom: 1px solid #fff;
 }
@@ -282,11 +303,11 @@ section {
 
 .header .btn-book-a-table,
 .header .btn-book-a-table:focus {
-  font-size: 14px;
+  font-size: 12px;
   color: #fff;
   background: var(--color-primary);
   padding: 8px 20px;
-  margin-left: 30px;
+  margin-left: 0px;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -294,7 +315,7 @@ section {
 .header .btn-book-a-table:hover,
 .header .btn-book-a-table:focus:hover {
   color: #fff;
-  background: rgba(206, 18, 18, 0.8);
+  background-color: #008d84;
 }
 
 section {
@@ -333,7 +354,7 @@ section {
     justify-content: space-between;
     padding: 0 3px;
     font-family: var(--font-secondary);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #7f7f90;
     white-space: nowrap;
@@ -1007,11 +1028,13 @@ section {
 --------------------------------------------------------------*/
 .events .container-fluid {
   padding: 0;
+  position: relative;
+  top: 32px;
 }
 
 .events .event-item {
   background-size: cover;
-  background-position: cente;
+  background-position: center;
   min-height: 600px;
   padding: 30px;
 }
