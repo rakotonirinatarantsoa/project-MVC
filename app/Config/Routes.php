@@ -24,3 +24,5 @@ $routes->get('modifierEvenement', 'EvenementController::modifEv');
 $routes->get('evenements/modifier/(:num)', 'EvenementController::modifier/$1');
 
 $routes->get('evenements/supprimer/(:num)', 'EvenementController::supprimer/$1');
+
+// $routes->post('inscription', 'InscriptionController::FaireInscription');

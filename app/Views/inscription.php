@@ -157,28 +157,28 @@
         <form action="">
           <div class="nom-input input-text">
             <label for="">Nom:</label>
-            <input type="text" placeholder="Entrez votre nom">
+            <input type="text" name="nom" placeholder="Entrez votre nom">
           </div>
 
           <div class="prenom-input input-text">
             <label for="">Prénom:</label>
-            <input type="text" placeholder="Entrez votre prénom">
+            <input type="text" name="prenom" placeholder="Entrez votre prénom">
           </div>
 
           <div class="sexe">Sexe:</div>
-          <select class="sexe-option" name="" id="">
+          <select class="sexe-option" name="sexe" id="">
             <option value="">Homme</option>
             <option value="">Femme</option>
           </select>
 
           <div class="adress-input input-text">
             <label for="">Adresse mail:</label>
-            <input type="text" placeholder="Entrez votre adresse mail">
+            <input type="text" name="email" placeholder="Entrez votre adresse mail">
           </div>
           
           <div class="password-input input-text">
             <label for="">Créer votre mot de passe:</label>
-            <input type="password" placeholder="Entrez votre mot de passe">
+            <input type="password" name="password" placeholder="Entrez votre mot de passe">
           </div>
           
           <div class="password-input input-text">
@@ -188,22 +188,22 @@
 
           <div class="adresse-résidence-input input-text">
             <label for="">Adresse(lieu):</label>
-            <input type="text" placeholder="Entrez votre adresse">
+            <input type="text" name="adresse" placeholder="Entrez votre adresse">
           </div>
 
           <div class="adresse-résidence-input input-text">
             <label for="">Numéro téléphone:</label>
-            <input type="text" placeholder="Entrez votre numéro de téléphone">
+            <input type="text" name="numero" placeholder="Entrez votre numéro de téléphone">
           </div>
 
           <div class="code-postal-input input-text">
             <label for="">Code postal:</label>
-            <input type="text" placeholder="Entrez votre code postal">
+            <input type="text" name="postal" placeholder="Entrez votre code postal">
           </div>
 
           <div class="code-postal-input input-text">
             <label for="">Ville:</label>
-            <input type="text" placeholder="Entrez votre ville">
+            <input type="text" name="ville" placeholder="Entrez votre ville">
           </div>
         </form>
       </div>
