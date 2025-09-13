@@ -9,3 +9,333 @@ in APPPATH\Controllers\EvenementController.php on line 10.
  6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:49:18 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:50:36 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:50:38 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:50:39 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:50:39 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:50:50 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:50:51 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:50:52 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:14 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:16 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:16 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:17 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:17 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:18 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:18 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:18 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:19 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:52:19 --> ErrorException: Undefined variable $evenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:54:24 --> ErrorException: Undefined variable $evenementevenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenementevenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:54:26 --> ErrorException: Undefined variable $evenementevenement
+[Method: GET, Route: backoffice]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenementevenement', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(39): view('backoffice', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->afficherListeEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:56:19 --> ErrorException: Undefined variable $evenements
+[Method: POST, Route: create-evenement]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenements', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(25): view('backoffice')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->createEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')
+CRITICAL - 2025-09-13 06:57:22 --> ErrorException: Undefined variable $evenements
+[Method: POST, Route: create-evenement]
+in APPPATH\Views\backoffice.php on line 69.
+ 1 APPPATH\Views\backoffice.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $evenements', 'C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php', 69)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\project-MVC\\app\\Views\\backoffice.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('backoffice', [], true)
+ 5 APPPATH\Controllers\EvenementController.php(25): view('backoffice')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EvenementController->createEvenement()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EvenementController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\laragon\\www\\project-MVC\\public\\index.php')

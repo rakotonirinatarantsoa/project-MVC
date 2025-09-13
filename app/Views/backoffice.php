@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des évènements</title>
 </head>
+
 <body>
+    <div>
+        <form action="<?= site_url('create-evenement') ?>" method="post">
+            <label>Titre:</label><br>
+            <input type="text" name="titre" required><br><br>
+
+            <label>Description:</label><br>
+            <input type="text" name="description" required><br><br>
+
+            <label>Date (nom):</label><br>
+            <input type="date" name="date" required><br><br>
+
+            <label>Lieu:</label><br>
+            <input type="text" name="lieu" required><br><br>
+
+            <label>Catégorie:</label><br>
+            <input type="text" name="categorie" required><br><br>
+
+            <label>Image:</label><br>
+            <input type="file" name="image" accept="image/png, image/jpeg" /><br><br>
+
+            <label>Nombre de Places:</label><br>
+            <input type="number" name="places" required><br><br>
+
+            <button type="submit">Enregistrer</button>
+        </form>
+    </div>
+
+
     <div class="container-lg">
         <div class="table-responsive">
             <div class="table-wrapper">
@@ -36,7 +66,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($evenement as $ev): ?>
+                        <?php foreach ($evenements as $ev): ?>
                             <tr>
                                 <td><?= $ev['titre'] ?></td>
                                 <td><?= $ev['description'] ?></td>
@@ -63,4 +93,5 @@
         </div>
     </div>
 </body>
+
 </html>

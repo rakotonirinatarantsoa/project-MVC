@@ -35,7 +35,7 @@ class EvenementController extends BaseController
     public function afficherListeEvenement()
     {
         $evenementModel = new \App\Models\EvenementModel();
-        $listeEvenements = $evenementModel->findAll();
-        return view('backoffice', ['listeEvenements' => $listeEvenements]);
+        $evenements = $evenementModel->findAll();
+        return view('backoffice', ['evenements' => $evenements]);
     }
 }
