@@ -32,30 +32,9 @@
 
 </head>
 
-<!-- <body>
-  <form action="<?= site_url('create-evenement') ?>" method="post">
-    <label>Titre:</label><br>
-    <input type="text" name="titre" required><br><br>
+<body>
+  
 
-    <label>Description:</label><br>
-    <input type="text" name="description" required><br><br>
-
-    <label>Date (nom):</label><br>
-    <input type="date" name="date" required><br><br>
-
-    <label>Lieu:</label><br>
-    <input type="text" name="lieu" required><br><br>
-
-    <label>Catégorie:</label><br>
-    <input type="text" name="categorie" required><br><br>
-
-    <label>Image:</label>
-    <input type="file" name="image" accept="image/png, image/jpeg" />
-
-    <button type="submit">Enregistrer</button>
-  </form> -->
-
-  <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
@@ -87,10 +66,8 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
-  </header>
+  </header> 
 
-
-  <!-- ======= Hero Section ======= -->
   <!-- <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
       <div class="row justify-content-between gy-5">
@@ -110,11 +87,6 @@
 
   <main id="main">
 
-
-
-    <!-- ======= Why Us Section ======= -->
-
-    <!-- ======= Events Section ======= -->
     <section id="events" class="events">
       <div class="container-fluid" data-aos="fade-up">
 
@@ -148,14 +120,14 @@
               <p class="description">
                 Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
               </p>
-            </div><!-- End Event item -->
+            </div>
 
           </div>
           <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Events Section -->
+    </section>
 
     <section id="why-us" class="why-us section-bg">
       <div class="container" data-aos="fade-up">
@@ -173,8 +145,7 @@
                 <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
-          </div><!-- End Why Box -->
-
+          </div>
           <div class="col-lg-8 d-flex align-items-center">
             <div class="row gy-4">
 
@@ -184,7 +155,7 @@
                   <h4>Economique</h4>
                   <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
                 </div>
-              </div><!-- End Icon Box -->
+              </div>
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
@@ -192,7 +163,7 @@
                   <h4>Rapide</h4>
                   <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                 </div>
-              </div><!-- End Icon Box -->
+              </div>
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
@@ -200,7 +171,7 @@
                   <h4>Sécurisé</h4>
                   <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                 </div>
-              </div><!-- End Icon Box -->
+              </div>
 
             </div>
           </div>
@@ -208,10 +179,9 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section>
 
 
-    <!-- ======= Book A Table Section ======= -->
     <section id="book-a-table" class="book-a-table">
       <div class="container" data-aos="fade-up">
 

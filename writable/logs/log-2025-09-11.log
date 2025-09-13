@@ -1,9 +1,0 @@
-CRITICAL - 2025-09-11 07:57:45 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
-[Method: GET, Route: /]
-in SYSTEMPATH\Database\Config.php on line 17.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-CRITICAL - 2025-09-11 07:57:46 --> ErrorException: Namespace declaration statement has to be the very first statement or after any declare call in the script
-[Method: GET, Route: logo.png]
-in SYSTEMPATH\Database\Config.php on line 17.
- 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
-
