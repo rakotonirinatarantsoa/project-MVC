@@ -91,21 +91,20 @@
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="section-header">
-          <!-- <h2>Events</h2> -->
           <p>Tous <span>Vos Evènements</span></p>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-           
+
             <?php foreach ($evenements as $evenement): ?>
-              <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
-              <h3><?php $evenement['titre'] ?></h3>
-              <div class="price align-self-start">$99</div>
-              <p class="description">
-                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-              </p>
-            </div>
+              <div id="<?= $evenement['id'] ?>" class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
+                <h3><?= $evenement['date'] ?></h3>
+                <div class="price align-self-start"><?= $evenement['titre'] ?></div>
+                <p class="description">
+                  <?= $evenement['description'] ?>
+                </p>
+              </div>
             <?php endforeach; ?>
           </div>
           <div class="swiper-pagination"></div>
