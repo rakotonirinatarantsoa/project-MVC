@@ -19,7 +19,8 @@ class EvenementModel extends Model
         'date',
         'lieu',
         'categorie',
-        'image'
+        'image',
+        'places',
     ];
 
     /**
