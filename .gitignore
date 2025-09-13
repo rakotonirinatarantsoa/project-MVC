@@ -1,0 +1,44 @@
+# =========================
+# CodeIgniter 4 GitIgnore
+# =========================
+
+# Composer dependencies
+/vendor/
+composer.lock
+
+# Environment config (keep .env.local in dev, never commit .env with secrets)
+.env
+
+# System cache, logs, and writable data
+/writable/cache/*
+/writable/logs/*
+/writable/session/*
+/writable/uploads/*
+!/writable/index.html
+
+# IDE / Editor files
+*.swp
+*.swo
+*.swn
+*~
+.idea/
+.vscode/
+nbproject/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PHPUnit / Testing
+.phpunit.result.cache
+/build/
+coverage/
+
+# Node / frontend stuff (if you add npm or frontend tooling)
+/node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
