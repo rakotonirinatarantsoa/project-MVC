@@ -1,3 +1,4 @@
 # System logs, and writable data
 /writable/logs/*
+/writable/debugbar/*
 
