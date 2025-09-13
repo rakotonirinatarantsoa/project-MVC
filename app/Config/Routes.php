@@ -16,3 +16,11 @@ $routes->post('crud', 'Home::evenements');
 
 $routes->post('create-evenement', 'EvenementController::createEvenement');
 $routes->get('/backoffice', 'EvenementController::afficherListeEvenement');
+
+$routes->get("evenements/modifierEvenement/(:num)", 'EvenementController::modifEv/$1');
+
+$routes->get('modifierEvenement', 'EvenementController::modifEv');
+
+$routes->get('evenements/modifier/(:num)', 'EvenementController::modifier/$1');
+
+$routes->get('evenements/supprimer/(:num)', 'EvenementController::supprimer/$1');

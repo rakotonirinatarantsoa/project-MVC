@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des évènements</title>
+
+    
+    <link rel="stylesheet" href="<?= base_url('bootstrap/css/bootstrap.min.css') ?>">
+
+    <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 
 <body>
@@ -53,45 +63,54 @@
                     </div>
                 </div>
                 <div class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Titre</th>
-                            <th>Description</th>
-                            <th>Date</th>
-                            <th>Lieu</th>
-                            <th>Catégories</th>
-                            <th>Images</th>
-                            <th>Nombres de places</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($evenements as $ev): ?>
+                    <table>
+                        <thead>
                             <tr>
-                                <td><?= $ev['titre'] ?></td>
-                                <td><?= $ev['description'] ?></td>
-                                <td><?= $ev['date'] ?></td>
-                                <td><?= $ev['lieu'] ?></td>
-                                <td><?= $ev['categorie'] ?></td>
-                                <td><?= $ev['image'] ?></td>
-                                <td>
-                                    <a class="add" data-toggle="tooltip" data-original-title="Add" href="">
-                                        <i class="material-icons"></i>
-                                    </a>
-                                    <a class="edit" data-toggle="tooltip" data-original-title="Edit" href="">
-                                        <i class="material-icons"></i>
-                                    </a>
-                                    <a class="delete" data-toggle="tooltip" data-original-title="Delete" href="">
-                                        <i class="material-icons"></i>
-                                    </a>
-                                </td>
+                                <th>Titre</th>
+                                <th>Description</th>
+                                <th>Date</th>
+                                <th>Lieu</th>
+                                <th>Catégories</th>
+                                <th>Images</th>
+                                <th>Nombres de places</th>
+                                <th>Action</th>
                             </tr>
-                        <?php endforeach; ?>
-                    </tbody>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($evenements as $ev): ?>
+                                <tr>
+                                    <td><?= $ev['titre'] ?></td>
+                                    <td><?= $ev['description'] ?></td>
+                                    <td><?= $ev['date'] ?></td>
+                                    <td><?= $ev['lieu'] ?></td>
+                                    <td><?= $ev['categorie'] ?></td>
+                                    <td><?= $ev['image'] ?></td>
+                                    <td><?= $ev['places'] ?></td>
+                                    <td>
+                                        <a class="edit" data-toggle="modal" href="evenements/modifierEvenement/<?= $ev['id'] ?>">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a class="delete" data-toggle="tooltip" data-original-title="Delete" href="evenements/supprimer/<?= $ev['id'] ?>">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
 </body>
 
 </html>
