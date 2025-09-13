@@ -7,7 +7,7 @@ class EvenementController extends BaseController
     public function createEvenement()
     {
         $evenementModel = new \App\Models\EvenementModel();
-        
+
         $data = [
             'titre'       => $this->request->getPost('titre'),
             'description' => $this->request->getPost('description'),
@@ -17,19 +17,7 @@ class EvenementController extends BaseController
             'image'       => $this->request->getPost('image'),
             'places'      => $this->request->getPost('places')
         ];
-        // var_dump($data);
-
         $insertId = $evenementModel->ajouterEvenement($data);
-
-        // if ($insertId) {
-        //     // Get the newly inserted row
-        //     $newBillet = $evenementModel->find($insertId);
-
-        //     // Send data to view
-        //     return view('accueil', ['billet' => $newBillet]);
-        // } else {
-        //     return view('accueil');
-        // }
     }
 
     public function accueil()
@@ -46,7 +34,8 @@ class EvenementController extends BaseController
         return view('backoffice', ['evenements' => $evenements]);
     }
 
-    public function modifier(){
+    public function modifier()
+    {
         $model = new \App\Models\EvenementModel();
         $data = [
             'titre'       => $this->request->getPost('titre'),
@@ -62,16 +51,17 @@ class EvenementController extends BaseController
         return redirect()->to('modifierEvenement');
     }
 
-    public function supprimer($id){
+    public function supprimer($id)
+    {
         $model = new \App\Models\EvenementModel();
         $model->delete($id);
         return redirect()->to('backoffice');
     }
 
-    public function modifEv($id){
+    public function modifierEvenement($id)
+    {
         $model = new \App\Models\EvenementModel();
         $data['evenements'] = $model->find($id);
         return view('modifierEvenement', $data);
     }
-
 }

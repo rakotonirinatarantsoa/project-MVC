@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class EvenementModel extends Model
+class ReservationModel extends Model
 {
-    protected $table            = 'evenements';
+    protected $table            = 'reservations';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
 
@@ -14,16 +14,16 @@ class EvenementModel extends Model
     protected $useSoftDeletes   = false;
 
     protected $allowedFields    = [
-        'titre',
-        'description',
-        'date',
-        'lieu',
-        'categorie',
-        'image',
-        'places',
+        'nom_client',
+        'prenom_client',
+        'email',
+        'telephone',
+        'date_reservation',
+        'nombre_personnes',
+        'id_evenement',
     ];
 
-    public function ajouterEvenement(array $data)
+    public function ajouterReservation(array $data)
     {
         if ($this->insert($data)) {
             return $this->getInsertID();

@@ -12,10 +12,12 @@ $routes->get('crud', 'Home::crudFanampiny');
 $routes->get('evenements', 'Home::eveneme');
 $routes->get('/', 'EvenementController::accueil');
 $routes->post('create-evenement', 'EvenementController::createEvenement');
+$routes->post('create-reservation', 'ReservationController::createReservation');
 $routes->get('/backoffice', 'EvenementController::afficherListeEvenement');
-$routes->get("evenements/modifierEvenement/(:num)", 'EvenementController::modifEv/$1');
-$routes->get('modifierEvenement', 'EvenementController::modifEv');
-$routes->get('evenements/modifier/(:num)', 'EvenementController::modifier/$1');
-$routes->get('evenements/supprimer/(:num)', 'EvenementController::supprimer/$1');
+$routes->get("evenements/modifierEvenement/(:num)", 'EvenementController::modifierEvenement/$1');
+$routes->get('modifierEvenement', 'EvenementController::modifierEvenement');
+$routes->get('edit-evenement/(:num)', 'EvenementController::modifier/$1');
+$routes->get('delete-evenement/(:num)', 'EvenementController::supprimer/$1');
+$routes->get('reserver/(:num)', 'ReservationController::afficherFormulaireReservationEvenement/$1');
 
 // $routes->post('inscription', 'InscriptionController::FaireInscription');
