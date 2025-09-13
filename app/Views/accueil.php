@@ -75,14 +75,14 @@
         <ul>
           <li><a href="#events">Accueil</a></li>
           <li><a href="#why-us">About</a></li>
-          <li><a href="#">Evènements</a></li>
+          <li><a href="">Evènements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="left-section">
         <a class="btn-book-a-table" href="#book-a-table">Se Connecter</a>
-        <a class="btn-book-a-table" href="#book-a-table">S'inscrire</a>
+        <a class="btn-book-a-table" href="/inscription">S'inscrire</a>
       </div>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -281,7 +281,7 @@
 
         <div class="section-header">
           <h2>Contact</h2>
-          <p>Need Help? <span>Contact Us</span></p>
+          <p>Besoin d'aide? <span>Contactez-nous</span></p>
         </div>
 
         <!-- <div class="mb-3">
@@ -294,8 +294,8 @@
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-map flex-shrink-0"></i>
               <div>
-                <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Notre adresse</h3>
+                <p>ISPM Antsobolo</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -304,8 +304,8 @@
             <div class="info-item d-flex align-items-center">
               <i class="icon bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>contact@example.com</p>
+                <h3>Notre email</h3>
+                <p>tickeko@gmail.com</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -314,8 +314,8 @@
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-telephone flex-shrink-0"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Contact</h3>
+                <p>036 12 345 67</p>
               </div>
             </div>
           </div><!-- End Info Item -->
@@ -324,9 +324,9 @@
             <div class="info-item  d-flex align-items-center">
               <i class="icon bi bi-share flex-shrink-0"></i>
               <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
-                  <strong>Sunday:</strong> Closed
+                <h3>Heure d'ouverture</h3>
+                <div><strong>Lundi-Samedi:</strong> 8h - 23h;
+                  <strong>Dimanche:</strong> Fermé
                 </div>
               </div>
             </div>
@@ -370,10 +370,10 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <i class="bi bi-geo-alt icon"></i>
           <div>
-            <h4>Address</h4>
+            <h4>Adresse</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022 - US<br>
+              ISPM <br>
+              Antsobolo<br>
             </p>
           </div>
 
@@ -384,8 +384,8 @@
           <div>
             <h4>Reservations</h4>
             <p>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Phone:</strong> 036 12 345 67<br>
+              <strong>Email:</strong> tickeko@gmail.com<br>
             </p>
           </div>
         </div>
@@ -393,16 +393,16 @@
         <div class="col-lg-3 col-md-6 footer-links d-flex">
           <i class="bi bi-clock icon"></i>
           <div>
-            <h4>Opening Hours</h4>
+            <h4>Heures d'ouverture</h4>
             <p>
-              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-              Sunday: Closed
+              <strong>Lundi-Samedi:</strong> 8h - 23h;
+              <strong>Dimanche:</strong> Fermé
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Follow Us</h4>
+          <h4>Réseaux sociaux</h4>
           <div class="social-links d-flex">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>

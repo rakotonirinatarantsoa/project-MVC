@@ -9,17 +9,13 @@
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <style>
     * {
       margin: 0;
-    }
-
-    .test {
-      font-size: 48px;
     }
 
     /* CSS du signup */
@@ -41,15 +37,22 @@
       background-color: white;
       height: 156vh;
       width: 32vw;
-      box-shadow: 0 0 12px rgba(37, 99, 235, 1);
+      box-shadow: 0 0 4px #00AFA3;
       border-radius: 16px;
       padding: 12px 24px;
     }
 
-    .title-action {
-      font-family: "Poppins", sans-serif;
+    .title-inscrivez {
+      font-family: "Amatic SC", sans-serif;
       font-weight: 600;
-      font-size: 32px;
+      font-size: 48px;
+    }
+
+    .title-action {
+      font-family: "Amatic SC", sans-serif;
+      font-weight: 600;
+      font-size: 48px;
+      color: #00AFA3;
       margin-bottom: 24px;
     }
     
@@ -66,9 +69,10 @@
     }
 
     .input-text label {
-      font-family: "Poppins", sans-serif;
+      font-family: "Inter", sans-serif;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 14px;
+      margin-bottom: 8px;
     }
     
     .input-text input {
@@ -77,6 +81,8 @@
       border: none;
       height: 28px;
       background-color: #f3f4f7ff;
+      border: 1px solid;
+      border-color: #cececeff; 
       /* width: 256px; */
     }
     
@@ -100,9 +106,9 @@
       font-weight: 500;
       font-size: 16px;
       color: white;
-      background-color: #2563EB;
+      background-color: #00AFA3;
       border: none;
-      border-radius: 4px;
+      border-radius: 32px;
       padding: 8px 32px;
       cursor: pointer;
       transition: all 0.25s;
@@ -113,7 +119,16 @@
       box-shadow: 0 0 12px rgba(37, 99, 235, 1);
     }
 
+    .sexe {
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
     .another-action {
+      margin-left: 16px;
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
       display: flex;
       /* justify-content: space-between; */
       /* background-color: red; */
@@ -136,7 +151,7 @@
   <!-- Signup -->
   <section class="signup-container">
     <div class="signup-form">
-      <div class="title-action">INSCRIPTION</div>
+      <p class="title-inscrivez"> inscrivez<span class="title-action">-vous</span></p>
 
       <div class="formulaire">
         <form action="">
@@ -195,10 +210,9 @@
       <button class="inscription-button">S'inscrire</button>
       <div class="another-action">
         <div class="compte-existant">Vous avez déjà un compte?</div>
-        <a href="/login" class="connect-here">Veuillez vous connecter ici</a>
+        <a href="/login" class="connect-here">Se connecter</a>
       </div>
     </div>
   </section>
 </body>
-
 </html>
