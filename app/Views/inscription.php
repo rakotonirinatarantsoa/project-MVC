@@ -28,7 +28,7 @@
       align-items: center;
       justify-content: center;
       background-color: #E5E7EB;
-      height: 150vh;
+      height: 164vh;
     }
 
     .signup-form {
@@ -39,7 +39,7 @@
       /* linear-gradient(to bottom, rgba(255,255,255,0) 10%, white 100%), */
       /* linear-gradient(135deg, rgba(37, 99, 235, 0.7) 40%, rgba(147, 51, 234, 0.7) 67%); */
       background-color: white;
-      height: 138vh;
+      height: 156vh;
       width: 32vw;
       box-shadow: 0 0 12px rgba(37, 99, 235, 1);
       border-radius: 16px;
@@ -55,7 +55,7 @@
     
     .formulaire {
       /* background-color: yellow; */
-      height: 115vh;
+      height: 130vh;
       width: 30vw;
     }
 
@@ -132,7 +132,6 @@
       text-decoration: underline;
     }
   </style>
-  <p class="test">Tongasoa tsika</p>
 
   <!-- Signup -->
   <section class="signup-container">

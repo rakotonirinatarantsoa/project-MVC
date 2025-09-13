@@ -219,8 +219,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Devenir Organisateur</h2>
-          <p> Créez votre<span> Compte Organisateur</span></p>
+          <h2>Connexion</h2>
+          <p> Connectez<span>-vous</span></p>
         </div>
 
         <div class="row g-0">
@@ -229,42 +229,46 @@
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
             <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-4 col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Votre adresse mail" data-rule="email" data-msg="Veuillez entrer une valide adresse mail">
+                <!-- <div class="validate"></div> -->
+              </div>
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
+                  <input type="password" name="password" class="form-control" id="password" placeholder="Votre mot de passe" data-rule="minlen:4" data-msg="">
+                  <!-- <div class="validate"></div> -->
                 </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                   <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6">
                   <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6">
                   <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6">
                   <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
                   <div class="validate"></div>
-                </div>
+                </div> -->
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
+                <!-- <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div> -->
               </div>
               <div class="mb-3">
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                <!-- <div class="error-message"></div> -->
+                <!-- <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div> -->
               </div>
-              <div class="text-center"><button type="submit">Book a Table</button></div>
+              <div class="text-center"><button type="submit">Se connecter</button></div>
+              <div class="another-action">
+                <a href="/inscription" class="sinscrire">S'inscrire</a>
+                <a href="#" class="forgot-password">Mot de passe oublié?</a>
+              </div>
             </form>
           </div><!-- End Reservation Form -->
 
@@ -333,7 +337,7 @@
 
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
           <div class="row">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -354,7 +358,7 @@
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
           <div class="text-center"><button type="submit">Send Message</button></div>
-        </form><!--End Contact Form -->
+        </form>End Contact Form -->
 
       </div>
     </section><!-- End Contact Section -->
@@ -415,14 +419,14 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Tickeko</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">Tickeko</a>
       </div>
     </div>
 

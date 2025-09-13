@@ -15,7 +15,7 @@ class EvenementController extends BaseController
             'lieu'        => $this->request->getPost('lieu'),
             'categorie'   => $this->request->getPost('categorie'),
             'image'       => $this->request->getPost('image'),
-            'places'       => $this->request->getPost('places')
+            'places'      => $this->request->getPost('places')
         ];
         // var_dump($data);
 
