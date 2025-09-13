@@ -66,7 +66,7 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
     </div>
-  </header>
+  </header> 
 
   <!-- <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
