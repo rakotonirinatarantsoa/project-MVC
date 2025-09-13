@@ -1,1 +1,3 @@
-writable/*
+/writable/*
+!/writable/index.html
+!/writable/.gitkeep
