@@ -6,11 +6,6 @@ use App\Models\EventsModel;
 
 class Home extends BaseController
 {
-    public function accueil(): string
-    {
-        return view('accueil');
-    }
-
     public function login()
     {
         return view('login');

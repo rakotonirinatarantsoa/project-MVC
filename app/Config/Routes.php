@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::accueil');
+// $routes->get('/', 'Home::accueil');
 // Chemin vers connexion
 $routes->get('/login', 'Home::login');
 // Chemin vers inscription
@@ -14,6 +14,7 @@ $routes->get('crud', 'Home::crudFanampiny');
 $routes->get('evenements', 'Home::eveneme');
 $routes->post('crud', 'Home::evenements');
 
+$routes->get('/', 'EvenementController::accueil');
 $routes->post('create-evenement', 'EvenementController::createEvenement');
 $routes->get('/backoffice', 'EvenementController::afficherListeEvenement');
 
