@@ -312,7 +312,7 @@ section {
   color: #fff;
   background: var(--color-primary);
   padding: 8px 20px;
-  margin-left: 0px;
+  margin: 0 4px;
   border-radius: 50px;
   transition: 0.3s;
 }
@@ -587,6 +587,13 @@ section {
     background: rgba(255, 255, 255, 0.8);
     z-index: 9996;
   }
+}
+
+.left-section {
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------

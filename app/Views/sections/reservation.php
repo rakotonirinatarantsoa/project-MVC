@@ -22,11 +22,11 @@
                             <!-- <div class="validate"></div> -->
                         </div>
                     </div>
-                    <div class="form-group mt-3">
-                    </div>
-                    <div class="mb-3">
+                    <!-- <div class="form-group mt-3">
+                    </div> -->
+                    <!-- <div class="mb-3">
                         <div class="loading">Loading</div>
-                    </div>
+                    </div> -->
                     <div class="text-center"><button type="submit">Se connecter</button></div>
                     <div class="another-action">
                         <a href="/inscription" class="sinscrire">S'inscrire</a>
