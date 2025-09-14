@@ -129,8 +129,7 @@
     }
 
     .inscription-button:hover {
-      background-color: #1D4ED8;
-      box-shadow: 0 0 12px rgba(37, 99, 235, 1);
+      background-color: #008d84;
     }
 
     .another-action {
