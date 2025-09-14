@@ -20,6 +20,15 @@ class Home extends BaseController
     {
         return view('inscription');
     }
+
+    public function bienvenue()
+    {
+        $session = session();
+        $nom = $session->get('nom_utilisateur');
+        $prenom = $session->get('prenom_utilisateur');
+        return view('bienvenue', ['nom' => $nom, 'prenom' => $prenom]);
+    }
+
     public function crudFanampiny(): string
     {
         return view('crud');

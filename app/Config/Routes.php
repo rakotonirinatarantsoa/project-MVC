@@ -9,6 +9,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('accueil', 'Home::accueil');
 $routes->get('/login', 'Home::login');
 $routes->get('/inscription', 'Home::inscription');
+$routes->get('bienvenue', 'Home::bienvenue'); 
 $routes->get('crud', 'Home::crudFanampiny');
 $routes->get('evenements', 'Home::eveneme');
 $routes->get('reservation', 'Home::reservation');

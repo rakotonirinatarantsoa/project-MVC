@@ -43,7 +43,13 @@ class InscriptionController extends BaseController
 
         $insertId = $inscription->FaireInscription($data);
 
-        // return redirect()->to(site_url('accueil'));
+        $session = session();
+        if($insertId){
+            $session->set('nom_utilisateur', $data['Nom']);
+            $session->set('prenom_utilisateur', $data['Prenom']);
+        }
+
+        return redirect()->to(site_url('bienvenue'));
 
         // if ($insertId) {
         //     // Get the newly inserted row
