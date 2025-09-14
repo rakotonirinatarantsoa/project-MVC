@@ -6,6 +6,11 @@ use App\Models\EventsModel;
 
 class Home extends BaseController
 {
+    public function accueil()
+    {
+        return view('accueil');
+    }
+    
     public function login()
     {
         return view('login');
@@ -28,6 +33,11 @@ class Home extends BaseController
     public function backOffice(): string
     {
         return view('backoffice');
+    }
+
+    public function reservation(): string
+    {
+        return view('sections/reservation');
     }
 
 

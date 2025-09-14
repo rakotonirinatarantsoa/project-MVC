@@ -34,7 +34,9 @@
   <main id="main">
     <?= $this->include('sections/slider-evenements') ?>
     <?= $this->include('sections/apropos') ?>
-    <?= $this->include('sections/reservation') ?>
+    <div id="reservation">
+      <?= $this->include('sections/reservation') ?>
+    </div>
     <?= $this->include('sections/contact') ?>
   </main>
   <?= $this->include('sections/footer') ?>

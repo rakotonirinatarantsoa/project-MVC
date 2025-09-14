@@ -35,7 +35,7 @@
       /* linear-gradient(to bottom, rgba(255,255,255,0) 10%, white 100%), */
       /* linear-gradient(135deg, rgba(37, 99, 235, 0.7) 40%, rgba(147, 51, 234, 0.7) 67%); */
       background-color: white;
-      height: 156vh;
+      height: 146vh;
       width: 32vw;
       box-shadow: 0 0 4px #00AFA3;
       border-radius: 16px;
@@ -58,8 +58,13 @@
     
     .formulaire {
       /* background-color: yellow; */
-      height: 130vh;
+      height: 128vh;
       width: 30vw;
+    }
+
+    input {
+      outline: none;
+      font-family: "Inter", sans-serif;
     }
 
     .input-text {
@@ -85,26 +90,35 @@
       border-color: #cececeff; 
       /* width: 256px; */
     }
-    
-    .sexe {
+
+    .warning {
       font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-size: 20px;
+      margin: 8px 0;
+      color: #00AFA3;
+      font-size: 10px;
+      opacity: 0;
+    }
+    
+    .warning:hover {
+      color: #d80000ff;
+      cursor: pointer;
     }
 
-    .sexe-option {
-      padding-left: 8px;
-      height: 32px;
-      width: 128px;
-      border-radius: 4px;
-      margin-bottom: 8px;
-      cursor: pointer;
+    input:invalid + .warning {
+      opacity: 1;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 6vh;
     }
     
     .inscription-button {
       font-family: "Poppins", sans-serif;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 14px;
       color: white;
       background-color: #00AFA3;
       border: none;
@@ -119,20 +133,15 @@
       box-shadow: 0 0 12px rgba(37, 99, 235, 1);
     }
 
-    .sexe {
-      font-family: "Inter", sans-serif;
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
     .another-action {
       margin-left: 16px;
       font-family: "Inter", sans-serif;
       font-size: 14px;
       display: flex;
+      justify-content: center;
       /* justify-content: space-between; */
       /* background-color: red; */
-      margin-top: 16px;
+      margin-top: 4px;
       width: 24vw;
     }
 
@@ -154,63 +163,61 @@
       <p class="title-inscrivez"> inscrivez<span class="title-action">-vous</span></p>
 
       <div class="formulaire">
-        <form action="">
+        <form action="<?= site_url('inscription') ?>" method="post">
           <div class="nom-input input-text">
             <label for="">Nom:</label>
-            <input type="text" name="nom" placeholder="Entrez votre nom">
+            <input type="text" name="nom" placeholder="Entrez votre nom" required>
+            <small class="warning">*Ce champ est obligatoire</small>
           </div>
-
+          
           <div class="prenom-input input-text">
             <label for="">Prénom:</label>
-            <input type="text" name="prenom" placeholder="Entrez votre prénom">
+            <input type="text" name="prenom" placeholder="Entrez votre prénom" required>
+            <small class="warning">*Ce champ est obligatoire</small>
           </div>
-
-          <div class="sexe">Sexe:</div>
-          <select class="sexe-option" name="sexe" id="">
-            <option value="">Homme</option>
-            <option value="">Femme</option>
-          </select>
-
+          
           <div class="adress-input input-text">
             <label for="">Adresse mail:</label>
-            <input type="text" name="email" placeholder="Entrez votre adresse mail">
+            <input type="text" name="email" placeholder="Entrez votre adresse mail" required>
+            <small class="warning">*Ce champ est obligatoire</small>
           </div>
           
           <div class="password-input input-text">
             <label for="">Créer votre mot de passe:</label>
-            <input type="password" name="password" placeholder="Entrez votre mot de passe">
+            <input type="password" name="password" placeholder="Entrez votre mot de passe" required>
+            <small class="warning">*Ce champ est obligatoire</small>
           </div>
           
           <div class="password-input input-text">
             <label for="">Confirmez votre mot de passe:</label>
-            <input type="password" placeholder="Entrez votre mot de passe">
+            <input type="password" name="confirm_password" placeholder="Entrez votre mot de passe" required>
+            <!-- <?php if(isset($validation) && $validation->getError('confirm_password')): ?>
+                <small style="color:red;">
+                    <?= $validation->getError('confirm_password') ?>
+                </small>
+            <?php endif; ?> -->
+            <small class="warning">*Ce champ est obligatoire</small>
           </div>
-
-          <div class="adresse-résidence-input input-text">
-            <label for="">Adresse(lieu):</label>
-            <input type="text" name="adresse" placeholder="Entrez votre adresse">
-          </div>
-
-          <div class="adresse-résidence-input input-text">
-            <label for="">Numéro téléphone:</label>
-            <input type="text" name="numero" placeholder="Entrez votre numéro de téléphone">
-          </div>
-
+          
           <div class="code-postal-input input-text">
             <label for="">Code postal:</label>
-            <input type="text" name="postal" placeholder="Entrez votre code postal">
+            <input type="text" name="postal" placeholder="Entrez votre code postal" required>
+            <small class="warning">*Ce champ est obligatoire</small>
           </div>
-
+          
           <div class="code-postal-input input-text">
             <label for="">Ville:</label>
-            <input type="text" name="ville" placeholder="Entrez votre ville">
+            <input type="text" name="ville" placeholder="Entrez votre ville" required>
+            <small class="warning">*Ce champ est obligatoire</small>
+          </div>
+          <div class="btn">
+            <button type="submit" class="inscription-button">S'inscrire</button>
           </div>
         </form>
       </div>
-      <button class="inscription-button">S'inscrire</button>
       <div class="another-action">
         <div class="compte-existant">Vous avez déjà un compte?</div>
-        <a href="/login" class="connect-here">Se connecter</a>
+        <a href="<?= site_url('/') ?>#reservation" class="connect-here">Se connecter</a>
       </div>
     </div>
   </section>

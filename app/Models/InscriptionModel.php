@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class InscriptionModel extends Model
 {
-    protected $table            = 'utilisateur';
+    protected $table            = 'utilisateurs';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
 
@@ -16,11 +16,8 @@ class InscriptionModel extends Model
     protected $allowedFields    = [
         'Nom',
         'Prenom',
-        'Sexe',
         'Email',
         'Password',
-        'Adresse',
-        'Telephone',
         'Postal',
         'Ville'
     ];
@@ -31,9 +28,9 @@ class InscriptionModel extends Model
      * @param array $donnee
      * @return int|false  Inserted ID on success, false on failure
      */
-    public function FaireInscription(array $donnee)
+    public function FaireInscription(array $data)
     {
-        if ($this->insert($donnee)) {
+        if ($this->insert($data)) {
             return $this->getInsertID();
         }
         return false;

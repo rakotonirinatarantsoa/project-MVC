@@ -6,12 +6,12 @@
         <div class="recherche">
             <input type="text" placeholder="Rechercher" class="barre-recherche">
             <button class="search-btn">
-                <img src="assets/img/search.svg" alt="search" class="search-icon">
+                <i class="search-icon bi bi-search"></i>
             </button>
         </div>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="#events">Accueil</a></li>
+                <li><a href="#">Accueil</a></li>
                 <li><a href="#why-us">About</a></li>
                 <li><a href="">Evènements</a></li>
                 <li><a href="#contact">Contact</a></li>

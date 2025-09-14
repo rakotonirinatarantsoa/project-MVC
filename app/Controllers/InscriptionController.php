@@ -6,22 +6,44 @@ class InscriptionController extends BaseController
 {
     public function inscription()
     {
+        // $validation = \Config\Services::validation();
+
+        // $rules = [
+        //     'nom' => 'required',
+        //     'prenom' => 'required',
+        //     'email' => 'required|valid_email',
+        //     'password' => 'required|min_length[6]',
+        //     'confirm_password' => 'required|matches[password]',
+        // ];
+
+        // $errors = [
+        //     'confirm_password' => [
+        //         'matches' => 'Les mots de passe ne correspondent pas.'
+        //     ]
+        // ];
+
+        // if(!$this->validate($rules, $errors)){
+        //     // Passer la validation à la vue
+        //     return view('inscription', [
+        //         'validation' => $this->validator
+        //     ]);
+        // }
+
         $inscription = new \App\Models\InscriptionModel();
         
-        $donnee = [
+        $data = [
             'Nom'       => $this->request->getPost('nom'),
             'Prenom' => $this->request->getPost('prenom'),
-            'Sexe'        => $this->request->getPost('sexe'),
             'Email'        => $this->request->getPost('email'),
             'Password'   => $this->request->getPost('password'),
-            'Adresse'       => $this->request->getPost('adresse'),
-            'Telephone'      => $this->request->getPost('telephone')
-            'Postal'      => $this->request->getPost('postal')
+            'Postal'      => $this->request->getPost('postal'),
             'Ville'      => $this->request->getPost('ville')
         ];
-        // var_dump($donnee);
+        // var_dump($data);
 
-        $insertId = $inscription->FaireInscription($donnee);
+        $insertId = $inscription->FaireInscription($data);
+
+        // return redirect()->to(site_url('accueil'));
 
         // if ($insertId) {
         //     // Get the newly inserted row

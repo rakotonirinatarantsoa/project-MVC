@@ -2,7 +2,7 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-            <h2>Connexion</h2>
+            <h2>Vous voulez reservez des billets ?</h2>
             <p> Connectez<span>-vous</span></p>
         </div>
 
