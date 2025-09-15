@@ -125,7 +125,7 @@ section {
 .search-btn {
   border: none;
   background-color: #dbeafe;
-  padding: 4px 12px;
+  padding: 8px 16px;
   border-radius: 32px;
 }
 
@@ -604,8 +604,14 @@ section {
 .left-section {
   padding: 45px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+
+.profil-text {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  margin: 0 8px;
 }
 
 /*--------------------------------------------------------------
@@ -1222,6 +1228,42 @@ section {
 /*--------------------------------------------------------------
 # Book A Table Section
 --------------------------------------------------------------*/
+
+.seconnecter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 54vh;
+}
+
+.seconnecter-container input {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  padding: 12px;
+  margin: 8px;
+  width: 32vw;
+  outline: none;
+  /* color: rgba(241, 25, 25, 0.6); */
+}
+
+.seconnecter-container .seconnecter-btn {
+  font-family: var(--font-secondary);
+  font-size: 16px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+  margin: 12px 0;
+}
+
+.seconnecter-container .seconnecter-btn:hover {
+  background-color: #008d84;
+}
+
 .book-a-table .reservation-img {
   min-height: 500px;
   background-size: cover;
@@ -1356,23 +1398,33 @@ section {
 
 .another-action {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   /* background-color: red; */
   margin-top: 24px;
-  margin-left: 56px;
   width: 28vw;
 }
 
-.another-action .sinscrire,
-.another-action .forgot-password {
+.another-action .pas-de-compte {
+  color: #111111;
+}
+
+.another-action .sinscrire {
   color: #1d4ed8;
   text-decoration: none;
+  transition: 0.4s;
 }
 
 .another-action .sinscrire:hover,
 .another-action .forgot-password:hover {
   color: #2563eb;
   text-decoration: underline;
+}
+
+.erreur-connexion {
+  height: 24px;
+  color: rgb(199, 0, 0);
+  font-family: var(--font-secondary);
+  font-size: 12px;
 }
 
 /*--------------------------------------------------------------

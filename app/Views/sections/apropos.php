@@ -6,8 +6,6 @@
                     <h3>Pourquoi choisir Tickeko?</h3>
                     <p>
                         Nous avons choisi de développer un projet de gestion de tickets en ligne car il répond à un besoin réel et actuel. En effet, de nombreux événements comme les concerts, les conférences, le cinéma ou encore les compétitions sportives nécessitent une solution simple et rapide pour l’achat et la gestion des billets.
-
-                        Nous avons nommé notre projet Tickeko. Ce nom est la combinaison de deux éléments : “Tick”, qui fait référence au mot ticket, et “Eko”, qui évoque à la fois l’écologie (car notre solution est respectueuse de l’environnement en réduisant le papier) et l’économie (car elle facilite la gestion et réduit les coûts). Tickeko symbolise ainsi une billetterie en ligne à la fois moderne, écologique et efficace.
                     </p>
                     <div class="text-center">
                         <a href="#" class="more-btn">En savoir plus <i class="bx bx-chevron-right"></i></a>

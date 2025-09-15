@@ -28,18 +28,22 @@
                         <a href="#" class="forgot-password">Mot de passe oublié?</a>
                     </div>
                 </form> -->
-                <form action="/connexion" method="post">
-                    <input type="email" name="email">
-                    <input type="password" name="password" id="">
-                    <button type="submit">Se connecter</button>
+                <form class="seconnecter-container" action="/connexion" method="post">
+                    <input type="email" name="email" placeholder="Votre email">
+                    <input type="password" name="password" id="" placeholder="Votre mot de passe">
+                    <!-- message d'erreur si besoin -->
+                                    <?php if (session()->getFlashdata('error')): ?>
+                                        <div class=" erreur-connexion">
+                                            <?= session()->getFlashdata('error') ?>
+                                        </div>
+                                    <?php endif; ?>
+                    <button class="seconnecter-btn" type="submit">Se connecter</button>
+                    <div class="another-action">
+                        <a href="" class="pas-de-compte">Pas de compte ?</a>
+                        <a href="/inscription" class="sinscrire">S'inscrire</a>
+                    </div>
                 </form>
 
-<!-- message d'erreur si besoin -->
-                <?php if (session()->getFlashdata('error')): ?>
-                    <div class="alert alert-danger">
-                        <?= session()->getFlashdata('error') ?>
-                    </div>
-                <?php endif; ?>
 
             </div>
         </div>

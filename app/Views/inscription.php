@@ -46,6 +46,7 @@
       font-family: "Amatic SC", sans-serif;
       font-weight: 600;
       font-size: 48px;
+      margin-bottom: 32px;
     }
 
     .title-action {

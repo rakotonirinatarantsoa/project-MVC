@@ -35,7 +35,7 @@
                 <label for="" class="form-label">Prix</label>
                 <input type="number" name="prix" id="" class="form-control" value="<?= $evenements['prix'] ?>">
                 <br>
-                <button type="submit" class="btn btn primary">Enregistrer</button>
+                <button type="submit" class="btn" style="background: #00afa3; color: #fff">Enregistrer</button>
             </form>
         </div>
     </div>

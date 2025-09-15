@@ -34,7 +34,7 @@
 
     <div class="reserver">
         <p class="reserver-titre">
-            test reservation evenement N°<?= $idEvenement ?>
+            Reservation évènement N°<?= $idEvenement ?>
         </p>
         <form class="reserver-form" action="<?= site_url('create-reservation') ?>" method="post">
             <input type="hidden" name="id_evenement" value="<?= $idEvenement ?>" required>

@@ -18,9 +18,8 @@
             </ul>
         </nav>
         <div class="left-section">
-            <a class="btn-book-a-table" href="#book-a-table">Se Connecter</a>
-            <a class="btn-book-a-table" href="/inscription">S'inscrire</a>
             <i class="bi bi-person-circle profile-icon" style="font-size: 24px; color: #858585ff; margin-left: 8px;"></i>
+            <p class="profil-text">Profil</p>
         </div>
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
