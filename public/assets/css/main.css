@@ -44,8 +44,20 @@ a {
   text-decoration: none;
 }
 
+#page-reserver {
+  color: #fff;
+  background: var(--color-primary);
+  padding: 8px 14px;
+  width: 96px;
+  transition: 0.4s;
+}
+
+#page-reserver:hover {
+  background-color: #009b90;
+}
+
 a:hover {
-  color: #ec2727;
+  color: #00e4d5;
   text-decoration: none;
 }
 
@@ -72,7 +84,7 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .section-header h2 {
