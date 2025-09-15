@@ -18,33 +18,36 @@
 </head>
 
 <body>
-    <div>
-        <form action="<?= site_url('create-evenement') ?>" method="post">
-            <label>Titre:</label><br>
-            <input type="text" name="titre" required><br><br>
+    <div class="container vh-150 d-flex justify-content-center align-items-center">
+        <div class="col-md-12">
+            <div class="card card-default p-5 rounded-5">
+                <form action="<?= site_url('create-evenement') ?>" method="post">
+                    <label class="form-label">Titre:</label><br>
+                    <input type="text" class="form-control" name="titre" required><br><br>
 
-            <label>Description:</label><br>
-            <input type="text" name="description" required><br><br>
+                    <label class="form-label">Description:</label><br>
+                    <input type="text" class="form-control" name="description" required><br><br>
 
-            <label>Date (nom):</label><br>
-            <input type="date" name="date" required><br><br>
+                    <label class="form-label">Date (nom):</label><br>
+                    <input type="date" class="form-control" name="date" required><br><br>
 
-            <label>Lieu:</label><br>
-            <input type="text" name="lieu" required><br><br>
+                    <label class="form-label">Lieu:</label><br>
+                    <input type="text" class="form-control" name="lieu" required><br><br>
 
-            <label>Catégorie:</label><br>
-            <input type="text" name="categorie" required><br><br>
+                    <label class="form-label">Catégorie:</label><br>
+                    <input type="text" class="form-control" name="categorie" required><br><br>
 
-            <label>Image:</label><br>
-            <input type="file" name="image" accept="image/png, image/jpeg" /><br><br>
+                    <label class="form-label">Image:</label><br>
+                    <input type="file" class="form-control" name="image" accept="image/png, image/jpeg" /><br><br>
 
-            <label>Nombre de Places:</label><br>
-            <input type="number" name="places" required><br><br>
+                    <label class="form-label">Nombre de Places:</label><br>
+                    <input type="number" class="form-control" name="places" required><br><br>
 
-            <button type="submit">Enregistrer</button>
-        </form>
+                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                </form>
+            </div>
+        </div>
     </div>
-
 
     <div class="container-lg">
         <div class="table-responsive">

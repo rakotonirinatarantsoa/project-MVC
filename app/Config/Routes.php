@@ -26,3 +26,5 @@ $routes->get('delete-evenement/(:num)', 'EvenementController::supprimer/$1');
 $routes->get('reserver/(:num)', 'ReservationController::afficherFormulaireReservationEvenement/$1');
 $routes->post('inscription', 'InscriptionController::inscription');
 $routes->post('/connexion', 'ConnexionController::connexion');
+
+$routes->get('evenement', 'User::barreRechercher/$1');
