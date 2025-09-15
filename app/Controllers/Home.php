@@ -6,7 +6,11 @@ use App\Models\EventsModel;
 
 class Home extends BaseController
 {
-    
+    public function accueilConnected(){
+        $evenementModel = new \App\Models\EvenementModel();
+        $evenements = $evenementModel->findAll();
+        return view('accueilConnecte', ['evenements' => $evenements, 'isConnected' => true]);
+    }
     public function login()
     {
         return view('login');

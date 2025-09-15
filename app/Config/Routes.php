@@ -6,7 +6,9 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 
-$routes->get('accueil', 'Home::accueil');
+$routes->get('/', 'EvenementController::accueil');
+$routes->get('/accueil', 'EvenementController::accueil');
+$routes->get('accueilConnecte', 'Home::accueilConnected');
 $routes->get('/login', 'Home::login');
 $routes->get('/inscription', 'Home::inscription');
 $routes->get('bienvenue', 'Home::bienvenue'); 
@@ -18,8 +20,9 @@ $routes->post('create-evenement', 'EvenementController::createEvenement');
 $routes->post('create-reservation', 'ReservationController::createReservation');
 $routes->get('/backoffice', 'EvenementController::afficherListeEvenement');
 $routes->get("evenements/modifierEvenement/(:num)", 'EvenementController::modifierEvenement/$1');
-$routes->get('modifierEvenement', 'EvenementController::modifierEvenement');
-$routes->get('edit-evenement/(:num)', 'EvenementController::modifier/$1');
+
+$routes->post('/edit-evenement/(:num)', 'EvenementController::modifier/$1');
 $routes->get('delete-evenement/(:num)', 'EvenementController::supprimer/$1');
 $routes->get('reserver/(:num)', 'ReservationController::afficherFormulaireReservationEvenement/$1');
 $routes->post('inscription', 'InscriptionController::inscription');
+$routes->post('/connexion', 'ConnexionController::connexion');

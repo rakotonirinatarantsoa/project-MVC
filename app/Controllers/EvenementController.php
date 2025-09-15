@@ -22,8 +22,7 @@ class EvenementController extends BaseController
     }
 
     public function accueil()
-    {
-        
+    {  
         $evenementModel = new \App\Models\EvenementModel();
         $evenements = $evenementModel->findAll();
         return view('accueil', ['evenements' => $evenements, 'isConnected' =>$this->isConnected]);
@@ -36,7 +35,7 @@ class EvenementController extends BaseController
         return view('backoffice', ['evenements' => $evenements]);
     }
 
-    public function modifier()
+    public function modifier($id)
     {
         $model = new \App\Models\EvenementModel();
         $data = [
@@ -49,8 +48,8 @@ class EvenementController extends BaseController
             'places'      => $this->request->getPost('places')
         ];
 
-        $model->update($data);
-        return redirect()->to('modifierEvenement');
+        $model->update($id, $data);
+        return redirect()->to(base_url('backoffice'));
     }
 
     public function supprimer($id)

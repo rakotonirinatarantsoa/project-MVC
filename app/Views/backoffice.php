@@ -87,7 +87,7 @@
                                     <td><?= $ev['image'] ?></td>
                                     <td><?= $ev['places'] ?></td>
                                     <td>
-                                        <a class="edit" data-toggle="modal" href="evenements/modifierEvenement/<?= $ev['id'] ?>">
+                                        <a class="edit" data-toggle="tooltip" href="evenements/modifierEvenement/<?= $ev['id'] ?>">
                                             <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="delete" data-toggle="tooltip" data-original-title="Delete" href="delete-evenement/<?= $ev['id'] ?>">

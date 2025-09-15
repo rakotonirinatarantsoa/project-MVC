@@ -1736,3 +1736,69 @@ section {
 a#page-reserver {
   z-index: 1;
 }
+
+.reserver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 32vh;
+  margin-bottom: 48vh;
+}
+
+.nombre-reserver {
+  width: 32vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reserver-titre {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.reserver-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-choix-billet {
+  display: flex;
+  width: 56vw;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: red;
+}
+
+.choix-billet {
+  outline: none;
+  padding: 4px 12px;
+  margin-bottom: 4vh;
+}
+
+.reserver input {
+  outline: none;
+}
+
+.container-choix-billet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reserver button {
+  font-size: 14px;
+  color: #fff;
+  background: var(--color-primary);
+  padding: 8px 20px;
+  margin: 0 4px;
+  border-radius: 50px;
+  transition: 0.3s;
+  border: none;
+}

@@ -11,28 +11,36 @@
             <!-- <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div> -->
 
             <div class="reservation-form-bg">
-                <form action="" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+                <!-- <form action="/connexion" method="post" class="php-email-form">
                     <div class="col-lg-4 col-md-6">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Votre adresse mail" data-rule="email" data-msg="Veuillez entrer une valide adresse mail">
-                        <!-- <div class="validate"></div> -->
+                        <input type="email" class="form-control" name="email" placeholder="Votre adresse mail" required>
                     </div>
                     <div class="row gy-4">
                         <div class="col-lg-4 col-md-6">
-                            <input type="password" name="password" class="form-control" id="password" placeholder="Votre mot de passe" data-rule="minlen:4" data-msg="">
-                            <!-- <div class="validate"></div> -->
+                            <input type="password" name="password" class="form-control" placeholder="Votre mot de passe" required>
                         </div>
                     </div>
-                    <!-- <div class="form-group mt-3">
-                    </div> -->
-                    <!-- <div class="mb-3">
-                        <div class="loading">Loading</div>
-                    </div> -->
-                    <div class="text-center"><button type="submit">Se connecter</button></div>
+                    <div class="text-center">
+                        <button type="submit">Se connecter</button>
+                    </div>
                     <div class="another-action">
                         <a href="/inscription" class="sinscrire">S'inscrire</a>
                         <a href="#" class="forgot-password">Mot de passe oublié?</a>
                     </div>
+                </form> -->
+                <form action="/connexion" method="post">
+                    <input type="email" name="email">
+                    <input type="password" name="password" id="">
+                    <button type="submit">Se connecter</button>
                 </form>
+
+<!-- message d'erreur si besoin -->
+                <?php if (session()->getFlashdata('error')): ?>
+                    <div class="alert alert-danger">
+                        <?= session()->getFlashdata('error') ?>
+                    </div>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
