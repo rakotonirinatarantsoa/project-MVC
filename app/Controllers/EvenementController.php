@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 class EvenementController extends BaseController
 {
+    private $isConnected = false;
     public function createEvenement()
     {
         $evenementModel = new \App\Models\EvenementModel();
@@ -22,9 +23,10 @@ class EvenementController extends BaseController
 
     public function accueil()
     {
+        
         $evenementModel = new \App\Models\EvenementModel();
         $evenements = $evenementModel->findAll();
-        return view('accueil', ['evenements' => $evenements]);
+        return view('accueil', ['evenements' => $evenements, 'isConnected' =>$this->isConnected]);
     }
 
     public function afficherListeEvenement()

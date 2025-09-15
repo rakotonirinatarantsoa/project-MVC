@@ -18,7 +18,11 @@
                         <p class="description">
                             <?= $evenement['categorie'] ?>
                         </p>
-                        <a id="page-reserver" href="/reserver/<?= $evenement['id'] ?>">Reserver</a>
+                        <?php if($isConnected):?> 
+                            <a id="page-reserver" href="/reserver/<?= $evenement['id'] ?>">Reserver</a>
+                        <?php else: ?>
+                            <a id="page-reserver" href="#book-a-table">Reserver</a>
+                        <?php endif ?>
                     </div>
                 <?php endforeach; ?>
             </div>

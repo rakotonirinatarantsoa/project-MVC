@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#why-us">About</a></li>
-                <li><a href="">Evènements</a></li>
+                <li><a href="#events">Evènements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
