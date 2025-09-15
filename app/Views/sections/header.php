@@ -4,10 +4,12 @@
             <h1>Tickeko<span>.</span></h1>
         </a>
         <div class="recherche">
-            <input type="text" placeholder="Rechercher" class="barre-recherche">
-            <button class="search-btn">
-                <i class="search-icon bi bi-search"></i>
-            </button>
+            <form action="evenement" method="get">
+                <input type="text" placeholder="Rechercher" name="recherche" class="barre-recherche" value="<?php esc($_GET['recherche'] ?? '') ?>">
+                <button class="search-btn">
+                    <i class="search-icon bi bi-search"></i>
+                </button>
+            </form>
         </div>
         <nav id="navbar" class="navbar">
             <ul>
