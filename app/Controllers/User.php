@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\EvenementModel;
+
 class User extends BaseController
 {
     public function barreRechercher(){
@@ -11,7 +13,10 @@ class User extends BaseController
         $search = $this->request->getVar('recherche');
 
         if($search){
-            $data['evenements'] = $evenementModel->like('titre', $search)->findAll();
+            $data['evenements'] = $evenementModel
+            ->like('titre', $search)
+            ->orLike('lieu', $search)
+            ->findAll();
         }else{
             $data['evenements'] = $evenementModel->findAll();
         }

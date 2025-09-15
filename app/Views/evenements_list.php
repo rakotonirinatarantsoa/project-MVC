@@ -30,17 +30,17 @@
             <div class="row gy-4">
                 <?php if(!empty($evenements)): ?>
                     <?php foreach ($evenements as $ev): ?>
-                        <div class="col-xl-4" data-aos="fade-up">
-                            <div id="<?= $ev['id'] ?>" class="swiper-slide event-item d-flex flex-column justify-content-end w-500" style="background-image: url(assets/img/<?= $ev['image'] ?>)">
-                                <h3><?= $ev['date'] ?></h3>
-                                <div class="price align-self-start"><?= $ev['titre'] ?></div>
-                                <p class="description">
+                        <div class="col-xl-4" style="display: flex; align-items:center; justify-content: center;" data-aos="fade-up">
+                            <div id="<?= $ev['id'] ?>" class="swiper-slide event-item d-flex flex-column justify-content-end w-500" style="background-image: url(assets/img/<?= $ev['image'] ?>); width: 350px; height: 300px; padding: 16px; margin: 20px;">
+                                <h3 style="color: white; "><?= $ev['date'] ?></h3>
+                                <div class="price align-self-start" style="color: white; font-size: 16px;"><?= $ev['titre'] ?></div>
+                                <p class="description" style="color: white; font-size: 12px;">
                                     <?= $ev['description'] ?>
                                 </p>
-                                <p class="description">
+                                <p class="lieu" style="color: white;">
                                     <?= $ev['lieu'] ?>
                                 </p>
-                                <p class="description">
+                                <p class="categorie" style="color: white;">
                                     <?= $ev['categorie'] ?>
                                 </p>
                                 <a id="page-reserver" href="/reserver/<?= $ev['id'] ?>">Reserver</a>
@@ -49,8 +49,9 @@
                     <?php endforeach; ?>
                 <?php else: ?>
                     <div class="container vh-150 d-flex justify-content-center align-items-center">
-                        <div class="card border-primary p-3 w-200 rounded-5">
-                            <img src="../images/rechercheVide.jpg" class="w-200 h-200"  alt="">
+                        <div class="alert alert-warning text-center" role="alert">
+                            <i class="bi bi-exclamation-triangle-fill" style="font-size:5rem;"></i><br>
+                            <p style="font-size: 16px;">Aucun résultat trouvé 🙁</p>
                         </div>
                     </div>
                 <?php endif; ?>
