@@ -18,6 +18,13 @@
                         <p class="description">
                             <?= $evenement['categorie'] ?>
                         </p>
+                        <p class="description my-3">
+                            <?= $evenement['prix']." Ar"?>
+                        </p>
+                        <p class="description my-2 w-50 p-2 rounded text-center shadow <?= ($evenement['places'] < 10)? "bg-danger" : "bg-success" ?>" style="opacity: 0.8;">
+                            <?= $evenement['places']." tickets restants"?>
+                        </p>
+
                         <?php if($isConnected):?> 
                             <a id="page-reserver" href="/reserver/<?= $evenement['id'] ?>">Reserver</a>
                         <?php else: ?>

@@ -73,6 +73,7 @@
                                 <th>Catégories</th>
                                 <th>Images</th>
                                 <th>Nombres de places</th>
+                                <th>Prix</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -86,6 +87,7 @@
                                     <td><?= $ev['categorie'] ?></td>
                                     <td><?= $ev['image'] ?></td>
                                     <td><?= $ev['places'] ?></td>
+                                    <td><?= $ev['prix'] ?></td>
                                     <td>
                                         <a class="edit" data-toggle="tooltip" href="evenements/modifierEvenement/<?= $ev['id'] ?>">
                                             <i class="fa fa-edit"></i>

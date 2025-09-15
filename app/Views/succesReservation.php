@@ -26,40 +26,15 @@
   <link href="<?= base_url('assets/vendor/swiper/swiper-bundle.min.css') ?>" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="<?= base_url('assets/css/main.css') ?>" rel="stylesheet">
+  <link href="<?= base_url('assets/css/bienvenue.css') ?>" rel="stylesheet">
 </head>
 
 <body>
-    <?= $this->include('sections/headerConnecte') ?>
-
-    <div class="reserver">
-        <p class="reserver-titre">
-            test reservation evenement N°<?= $idEvenement ?>
-        </p>
-        <form class="reserver-form" action="<?= site_url('create-reservation') ?>" method="post">
-            <input type="hidden" name="id_evenement" value="<?= $idEvenement ?>" required>
-            <div class="nombre-reserver">
-                <label>Nombre de billet à reserver:</label><br>
-                <input type="number" name="nombre_personnes" required /><br><br>
-            </div>
-
-            <div class="nombre-reserver">
-                <label class="col" for="cat">
-                    Choix des places:
-                </label>
-                <select name="categorie" id="cat" class="col">
-                    <option value="fanzone">Fanzone</option>
-                    <option value="bronze">Bronze</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
-                    <option value="vip">VIP</option>
-                </select>
-            </div>
-    
-            <button type="submit" class="my-4">Reserver</button>
-        </form>
+    <div class="bienvenue-text">
+        <p class="bienvenue">Vous avez reservé <?= $nombre ?> billet(s) pour <?= $evenement['titre'] ?>  .<i class="bi bi-check-circle-fill" style="color: rgba(0, 218, 0, 1); font-size: 16px;"></i></p>
+        <p class="prix-total">Total <?= $montant?></p>
+        <a href="<?= site_url('/') ?>#main" class="connecter-btn" type="submit">Retour</a>
     </div>
-    <?= $this->include('sections/footer') ?>
 
   <!-- Vendor JS Files -->
   <script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>

@@ -23,6 +23,7 @@ $routes->get("evenements/modifierEvenement/(:num)", 'EvenementController::modifi
 
 $routes->post('/edit-evenement/(:num)', 'EvenementController::modifier/$1');
 $routes->get('delete-evenement/(:num)', 'EvenementController::supprimer/$1');
-$routes->get('reserver/(:num)', 'ReservationController::afficherFormulaireReservationEvenement/$1');
+$routes->get('/reserver/(:num)', 'ReservationController::afficherFormulaireReservationEvenement/$1');
 $routes->post('inscription', 'InscriptionController::inscription');
 $routes->post('/connexion', 'ConnexionController::connexion');
+$routes->get('/succesReservation/(:num)/(:num)/(:any)', 'ReservationController::succesReservation/$1/$2/$3');

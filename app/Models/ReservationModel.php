@@ -14,11 +14,6 @@ class ReservationModel extends Model
     protected $useSoftDeletes   = false;
 
     protected $allowedFields    = [
-        'nom_client',
-        'prenom_client',
-        'email',
-        'telephone',
-        'date_reservation',
         'nombre_personnes',
         'id_evenement',
     ];

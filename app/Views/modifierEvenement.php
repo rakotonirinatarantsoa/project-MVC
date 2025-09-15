@@ -32,6 +32,8 @@
 
                 <label for="" class="form-label">Nombre de places</label>
                 <input type="number" name="places" id="" class="form-control" value="<?= $evenements['places'] ?>">
+                <label for="" class="form-label">Prix</label>
+                <input type="number" name="prix" id="" class="form-control" value="<?= $evenements['prix'] ?>">
                 <br>
                 <button type="submit" class="btn btn primary">Enregistrer</button>
             </form>
