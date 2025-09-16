@@ -128,7 +128,7 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label class="form-label">Date (nom):</label><br>
+                            <label class="form-label">Date:</label><br>
                             <input type="date" class="form-control" name="date" required><br><br>
                         </div>
                         <div class="col">
