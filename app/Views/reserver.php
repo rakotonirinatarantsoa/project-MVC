@@ -39,15 +39,15 @@
         <form class="reserver-form" action="<?= site_url('create-reservation') ?>" method="post">
             <input type="hidden" name="id_evenement" value="<?= $idEvenement ?>" required>
             <div class="nombre-reserver">
-                <label>Nombre de billet à reserver:</label><br>
+                <label class="choix">Nombre de billet à reserver:</label><br>
                 <input type="number" name="nombre_personnes" required /><br><br>
             </div>
 
             <div class="nombre-reserver">
-                <label class="col" for="cat">
+                <label for="cat" class="choix">
                     Choix des places:
                 </label>
-                <select name="categorie" id="cat" class="col">
+                <select name="categorie" class="categorie" id="cat">
                     <option value="fanzone">Fanzone</option>
                     <option value="bronze">Bronze</option>
                     <option value="silver">Silver</option>

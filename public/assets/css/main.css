@@ -1835,6 +1835,21 @@ a#page-reserver {
 
 .reserver input {
   outline: none;
+  border: 1px solid #eee;
+  width: 16vw;
+  margin-left: 32px;
+}
+
+.choix {
+  font-family: var(--font-secondary);
+  font-size: 14px;
+}
+
+.categorie {
+  font-family: var(--font-secondary);
+  color: rgb(61, 61, 61);
+  border: 1px solid #eee;
+  width: 16vw;
 }
 
 .container-choix-billet {
