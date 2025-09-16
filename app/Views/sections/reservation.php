@@ -39,7 +39,7 @@
                                     <?php endif; ?>
                     <button class="seconnecter-btn" type="submit">Se connecter</button>
                     <div class="another-action">
-                        <a href="" class="pas-de-compte">Pas de compte ?</a>
+                        <a href="/inscription" class="pas-de-compte">Pas de compte ?</a>
                         <a href="/inscription" class="sinscrire">S'inscrire</a>
                     </div>
                 </form>

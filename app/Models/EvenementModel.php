@@ -21,7 +21,9 @@ class EvenementModel extends Model
         'categorie',
         'image',
         'places',
+        'vendus',
         'prix',
+        'gain'
     ];
 
     public function ajouterEvenement(array $data)

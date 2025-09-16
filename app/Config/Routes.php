@@ -28,3 +28,6 @@ $routes->post('inscription', 'InscriptionController::inscription');
 $routes->post('/connexion', 'ConnexionController::connexion');
 $routes->get('/succesReservation/(:num)/(:num)/(:any)', 'ReservationController::succesReservation/$1/$2/$3');
 $routes->get('evenement', 'User::barreRechercher/$1');
+
+$routes->get('statistique', 'StatsController::index');
+$routes->get('echecReservation', 'ReservationController::echecReservation');

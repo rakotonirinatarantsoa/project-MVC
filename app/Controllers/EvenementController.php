@@ -16,9 +16,11 @@ class EvenementController extends BaseController
             'lieu'        => $this->request->getPost('lieu'),
             'categorie'   => $this->request->getPost('categorie'),
             'image'       => $this->request->getPost('image'),
-            'places'      => $this->request->getPost('places')
+            'places'      => $this->request->getPost('places'),
+            'prix'        => $this->request->getPost('prix'),
         ];
         $insertId = $evenementModel->ajouterEvenement($data);
+        return redirect()->to('backoffice');
     }
 
     public function accueil()
