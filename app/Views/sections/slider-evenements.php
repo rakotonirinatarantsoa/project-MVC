@@ -6,7 +6,7 @@
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
             <div class="swiper-wrapper">
                 <?php foreach ($evenements as $evenement): ?>
-                    <div id="<?= $evenement['id'] ?>" class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/<?= $evenement['image'] ?>)">
+                    <div id="<?= $evenement['id'] ?>" class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url('<?=base_url('assets/img/' . $evenement['image'])?>')">
                         <h3><?= $evenement['date'] ?></h3>
                         <div class="price align-self-start"><?= $evenement['titre'] ?></div>
                         <p class="description">
