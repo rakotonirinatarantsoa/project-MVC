@@ -33,7 +33,7 @@
     <div class="bienvenue-text">
         <p class="bienvenue">Vous avez reservé <?= $nombre ?> billet(s) pour <?= $evenement['titre'] ?>  .<i class="bi bi-check-circle-fill" style="color: rgba(0, 218, 0, 1); font-size: 16px;"></i></p>
         <p class="prix-total">Total <?= $montant?> Ar.</p>
-        <a href="<?= base_url('/accueilConnecte') ?>" class="connecter-btn">Retour</a>
+        <a href="<?= base_url('/accueilConnecte') ?>" class="connecter-btn">Ok</a>
     </div>
 
   <!-- Vendor JS Files -->

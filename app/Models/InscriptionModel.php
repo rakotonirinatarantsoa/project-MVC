@@ -30,6 +30,7 @@ class InscriptionModel extends Model
      */
     public function FaireInscription(array $data)
     {
+
         if ($this->insert($data)) {
             return $this->getInsertID();
         }

@@ -55,7 +55,7 @@
                     <option value="vip">VIP</option>
                 </select>
             </div>
-    
+            
             <button type="submit" class="my-4">Reserver</button>
         </form>
     </div>
